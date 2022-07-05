@@ -1,6 +1,7 @@
 "use strict";
 exports.__esModule = true;
 exports.getName = exports.introduce = exports.fetchData = exports.printFormat = exports.format = exports.addStrings = void 0;
+var es6_promise_1 = require("es6-promise");
 function addNumbers(a, b) {
     return a + b;
 }
@@ -16,7 +17,7 @@ var printFormat = function (title, param) {
     console.log((0, exports.format)(title, param));
 };
 exports.printFormat = printFormat;
-var fetchData = function (url) { return Promise.resolve("Data from ".concat(url)); };
+var fetchData = function (url) { return es6_promise_1.Promise.resolve("Data from ".concat(url)); };
 exports.fetchData = fetchData;
 var introduce = function (salutation) {
     var names = [];

@@ -1,3 +1,5 @@
+import { Promise } from 'es6-promise';
+
 function addNumbers(a: number, b: number): number {
   return a + b;
 }
